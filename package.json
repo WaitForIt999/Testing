@@ -4,7 +4,8 @@
   "description": "Testing projects Depository",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:playwright": "playwright test",
+    "test:jest": "jest"
   },
   "repository": {
     "type": "git",
