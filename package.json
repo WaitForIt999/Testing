@@ -21,6 +21,10 @@
   "homepage": "https://github.com/WaitForIt999/Testing#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "jest": "^30.2.0"
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "jest": "^30.2.0",
+    "mocha": "^10.2.0",
+    "vitest": "^0.34.0"
   }
 }
