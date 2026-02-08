@@ -1,0 +1,25 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Testing projects Depository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaitForIt999/Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/WaitForIt999/Testing/issues"
+  },
+  "homepage": "https://github.com/WaitForIt999/Testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "jest": "^30.2.0"
+  }
+}
