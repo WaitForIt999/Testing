@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test:playwright": "playwright test",
-    "test:jest": "jest"
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "@playwright/test": "^1.58.2",
     "@types/jest": "^30.0.0",
     "@types/mocha": "^10.0.10",
+    "@vitest/coverage-v8": "^4.0.18",
     "jest": "^30.2.0",
     "mocha": "^10.2.0",
     "tsx": "^4.21.0",
