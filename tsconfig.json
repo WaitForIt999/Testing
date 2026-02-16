@@ -6,6 +6,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["mocha", "vitest", "jest", "@playwright/test"]
+    "types": ["vitest/globals", "@playwright/test"]
   }
 }
