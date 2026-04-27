@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "outDir": "./dist",
+    "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["vitest/globals", "@playwright/test"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["tests/**/*", "node_modules", "dist"]
+  "include": ["tests/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
