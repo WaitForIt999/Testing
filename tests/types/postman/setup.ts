@@ -1,4 +1,4 @@
-const baseurl = 'https://template.postman-echo.com';
+const baseurl = 'https://pokeapi.co/api/v2/';
 
 export const setup = async () => {
     const response = await fetch(baseurl);
