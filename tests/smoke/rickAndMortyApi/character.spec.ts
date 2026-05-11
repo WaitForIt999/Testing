@@ -1,10 +1,34 @@
-import { expect, describe } from "vitest";
-import { setup } from '../../types/postman/rickandmort';
+import { expect, describe, vi, beforeEach, afterEach } from "vitest";
+import { setup } from '../../types/postman/rickandmorty';
+
+const mockedCharacter = {
+    id: 209,
+    name: 'Long Sleeved Morty',
+    status: 'Alive',
+    species: 'Human',
+    gender: 'Male',
+    origin: { name: 'Earth (Replacement Dimension)' },
+    location: {
+        name: 'Citadel of Ricks',
+        url: 'https://rickandmortyapi.com/api/location/3',
+    },
+};
+
+beforeEach(() => {
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue({
+        ok: true,
+        json: async () => mockedCharacter,
+    } as Response);
+});
+
+afterEach(() => {
+    vi.restoreAllMocks();
+});
 
 describe('Rick and Morty API', () => {
     it('should return a successful response from the character endpoint', async () => {
         const data = await setup();
-        expect(data).toBeDefined();
+        expect(data).toEqual(mockedCharacter);
     });
 });
 
