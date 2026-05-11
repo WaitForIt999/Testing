@@ -14,13 +14,6 @@ const mockedCharacter = {
     },
 };
 
-describe('Rick and Morty API', () => {
-    it('should return a successful response from the character endpoint', async () => {
-        const data = await setup();
-        expect(data).toEqual(mockedCharacter);
-    });
-});
-
 beforeEach(() => {
     vi.spyOn(globalThis, 'fetch').mockResolvedValue({
         ok: true,
@@ -30,6 +23,13 @@ beforeEach(() => {
 
 afterEach(() => {
     vi.restoreAllMocks();
+});
+
+describe('Rick and Morty API', () => {
+    it('should return a successful response from the character endpoint', async () => {
+        const data = await setup();
+        expect(data).toEqual(mockedCharacter);
+    });
 });
 
 describe('Character Data Validation', () => {
