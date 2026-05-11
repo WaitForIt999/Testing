@@ -3,7 +3,7 @@ import type { AddressInfo } from 'node:net';
 import { app } from '../types/helloApp';
 
 let server: ReturnType<typeof app.listen>;
-let baseUrl = '';
+let baseUrl: string;
 
 beforeAll(async () => {
   server = app.listen(0);
