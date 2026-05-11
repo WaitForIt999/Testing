@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { setup } from '../types/postman/setup';
-import { setup as setupRickAndMorty } from '../types/postman/rickandmort';
+import { setup as setupRickAndMorty } from '../types/postman/rickandmorty';
 
 describe('postman setup helpers', () => {
   afterEach(() => {

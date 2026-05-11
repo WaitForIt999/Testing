@@ -1,5 +1,5 @@
 import { expect, describe, vi, beforeEach, afterEach } from "vitest";
-import { setup } from '../../types/postman/rickandmort';
+import { setup } from '../../types/postman/rickandmorty';
 
 const mockedCharacter = {
     id: 209,
