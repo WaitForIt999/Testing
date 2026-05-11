@@ -2,10 +2,13 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["mocha", "vitest", "jest", "@playwright/test"]
-  }
+    "types": ["vitest/globals"]
+  },
+  "include": ["tests/**/*"],
+  "exclude": ["node_modules", "dist", "tests/playwright"]
 }

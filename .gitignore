@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.venv/
+test-results/
+coverage/
+apps/*/node_modules/
+apps/*/dist/
+apps/*/.next/
+playwright-report/
