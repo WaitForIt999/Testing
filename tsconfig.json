@@ -2,10 +2,18 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+<<<<<<< HEAD
     "types": ["vitest", "@playwright/test", "node", "vite/client"]
   }
+=======
+    "types": ["vitest/globals"]
+  },
+  "include": ["tests/**/*"],
+  "exclude": ["node_modules", "dist", "tests/playwright"]
+>>>>>>> 725d9162727192389253d9970da85d290fd2c8b2
 }
