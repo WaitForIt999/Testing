@@ -28,10 +28,6 @@
     "@ljharb/tsconfig": "^0.3.2",
     "@playwright/test": "^1.58.2",
     "@types/express": "^5.0.6",
-<<<<<<< HEAD
-=======
-    "@types/node": "^25.3.5",
->>>>>>> 725d9162727192389253d9970da85d290fd2c8b2
     "@vitest/coverage-v8": "^4.0.18",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
