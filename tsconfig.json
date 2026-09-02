@@ -7,6 +7,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["vitest", "@playwright/test", "node", "vite/client"]
+    "types": ["vitest/globals", "vitest", "@playwright/test", "node", "vite/client"]
   }
 }

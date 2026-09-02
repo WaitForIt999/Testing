@@ -36,7 +36,7 @@ z Wordu:
 | 8   | retry po neúspěchu                | `startPayment` odmítne jen `invoiced` objednávky (409)       |
 | 9   | export přehledu                   | `listPaymentsReport` s `onlyBillable` filtrem                |
 
-## Co je záměrně zjednodušené (mock, ne produkční kód)
+## Co je záměrně zjednodušené 
 
 - In-memory store místo databáze.
 - Žádné skutečné volání externí brány – webhook se simuluje ručním POST requestem.
